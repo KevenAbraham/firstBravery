@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title>LOJA</title>
+		<style>
+			@import url("../css/loja.css");
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Isso importará os ícones que são usados-->
+		 <link rel="icon" type="image/x-icon" href="Imagens\black-bravery-icon-514px.png"><!--Ícone da página-->
+	</head>
+	<body>
+		<!--Imagem de plano de fundo da página-->
+		<img src="../Imagens\backgroung-image-2.png" id="background">
+		<!-- Barra de navegação -->
+		<div id="navbar">
+		  <a href="../principal.html"><img src="../Imagens\black-bravery-logo-mini.png" id="logo"></a>
+		  <div id="navbar-right">
+			<a class="active" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i>CONTA</a>
+			 <a class="link" href="estilos.html">ESTILOS</a>
+		  </div>
+		</div>	
+		<!--Configuração do Ícone de Conta-->
+		<div id='id01' class='modal'>
+			<span onclick="document.getElementById('id01').style.display='none'" class='close' title='Fechar'>&times;</span>
+			<form class='modal-content animate'>
+				<div class='container2'>
+					<label><b>Usuário</b></label>
+					<input type='text' placeholder='Digite o Usuário' id='uname'>
+					
+					<label><b>Senha</b></label>
+					<input type='password' placeholder='Digite a Senha' id='psw'>
+					
+					<button onclick="Login()" class='loginbtn' type='submit'>Login</button>
+					<center><label><b>Novo por aqui?</b></label></center>
+					<center><h3>Se sim, <a href="../principal.html">clique aqui</a> para retornar a home e fazer o cadastro clicando no ícone de perfil</h3></center>
+					
+					<div class='container2' style='background-color:#ddd'>
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Título da Sessão-->
+		<div class="title">
+			<center><h1><u>LOJA BRAVERY</u></h1></center>
+		</div>
+		<!--Sessão com os cards-->
+		<div class="card"> <!--'Card' Será para os ternos ímpares que estão posicionados na parte esquerda da página-->
+			<img src="../Ternos\Terno 1.png" alt="Terno 1" style="width: 80%">
+			<h2>Smoke BRAVERY Saibot</h2>
+			<p class="price">R$3.699,99</p>
+			<p id="description">O Saibot carrega originalidade com estilo. Você vestido na cor mais quente que pode existir!</p>
+			<p><a href="carrinho-terno1.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card1"> <!--'Card1' Será para os ternos pares que estão posicionados na parte direita da página-->
+			<img src="../Ternos\Terno 2.png" alt="Terno 2" style="width: 80%">
+			<h2>Smoke BRAVERY Sceit</h2>
+			<p class="price">R$3.099,99</p>
+			<p id="description">Bordado com tecidos egípcios ele traz o poder de Hapi, a personificação das puras águas do Rio Nilo.</p>
+			<p><a href="carrinho-terno2.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card">
+			<img src="../Ternos\Terno 3.png" alt="Terno 3" style="width: 80%">
+			<h2>Terno BRAVERY Liberty</h2>
+			<p class="price">R$2.799,99</p>
+			<p id="description">Tecido importado diretamente de Nevada/US. Carrega o estilo dos melhores cassinos de Las Vegas. Para uma noite esportiva e elegante!</p>
+			<p><a href="carrinho-terno3.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card1">
+			<img src="../Ternos\Terno 4.png" alt="Terno 4" style="width: 80%">
+			<h2>Terno BRAVERY SnowSuit</h2>
+			<p class="price">R$3.339,99</p>
+			<p id="description">Construído com o mais premium tecido de algodão indiano. Um terno leve e despojado. Torne-se a melhor versão de você mesmo!</p>
+			<p><a href="carrinho-terno4.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card">
+			<img src="../Ternos\Terno 5.png" alt="Terno 5" style="width: 80%">
+			<h2>Smoke BRAVERY Twilight</h2>
+			<p class="price">R$2.399,99</p>
+			<p id="description">Um violeta delicado é mostrado no céu antes mesmo do anoitecer. Esse traje é perfeito pra qualquer evento!</p>
+			<p><a href="carrinho-terno5.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card1">
+			<img src="../Ternos\Terno 6.png" alt="Terno 6" style="width: 80%">
+			<h2>Terno BRAVERY Shrike</h2>
+			<p class="price">R$3.299,99</p>
+			<p id="description">Os olhares se voltarão ao homem que usar este traje! ~Abraham, CEO da BRAVERY</p>
+			<p><a href="carrinho-terno6.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card">
+			<img src="../Ternos\Terno 7.png" alt="Terno 7" style="width:80%">
+			<h2>Terno BRAVERY NightVest</h2>
+			<p class="price">R$2.999,99</p>
+			<p id="description">Qual noite vai ser agraciada com a sua presença dentro desse terno?</p>
+			<p><a href="carrinho-terno7.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<div class="card1">
+			<img src="../Ternos\Terno 8.png" alt="Terno 8" style="width: 80%">
+			<h2>Terno BRAVERY RoyalOcean</h2>
+			<p class="price">R$2.899,99</p>
+			<p id="description">Com dois tons diferentes de azul, ele demarca a fronteira entra uma praia calma e um mar enfurecido.</p>
+			<p><a href="carrinho-terno8.html"><button class="btn_kart">Prosseguir para Compra</button></p></a>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="footer">
+			<center><h6>&copy;Copyright 2022 Bravery LMTD. Todos os direitos reservados.</h6></center>
+		<div class="footer1">
+			<p id="footer1">Brasil</p>
+			<p id="footer1">+55 (11) 4513-4614</p>
+			<p id="footer1">Av. Paulista, 616</p>
+			<p id="footer1">bravery@mail.bravery.com</p>
+		</div>
+		</div>
+			
+		
+		<script src="../js/script.js"></script>
+	</body>
+</html>

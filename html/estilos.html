@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>Estilos</title>
+		<style>@import url("../css/estilos.css");
+		</style>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="icon" type="image/x-icon" href="../Imagens\black-bravery-icon-514px.png">
+	</head>
+	<body>
+	 <img src="../Imagens\background-image3.png" id="background">
+	 <!--Configuração da Barra de Navegação-->
+		<div id="navbar">
+		  <a href="../principal.html"><img src="../Imagens\black-bravery-logo-mini.png" id="logo"></a>
+		  <div id="navbar-right">
+			<a class="active" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-fw fa-user"></i>CONTA</a>
+			<a class="link" href="loja.html">LOJA</a>
+		  </div>
+		</div>
+		<!--Configuração do Ícone de Conta-->
+		<div id='id01' class='modal'>
+			<span onclick="document.getElementById('id01').style.display='none'" class='close' title='Fechar'>&times;</span>
+			<form class='modal-content animate'>
+				<div class='container2'>
+					<label><b>Usuário</b></label>
+					<input type='text' placeholder='Digite o Usuário' id='uname'>
+					
+					<label><b>Senha</b></label>
+					<input type='password' placeholder='Digite a Senha' id='psw'>
+					
+					<button onclick="Login()" class='loginbtn' type='submit'>Login</button>
+					<center><label><b>Novo por aqui?</b></label></center>
+					<center><h3>Se sim, <a href="../principal.html"><i>clique aqui</i></a> para retornar a home e fazer o cadastro clicando no ícone de perfil</h3></center>
+					
+					<div class='container2' style='background-color:#ddd'>
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Configurando o Cadastro-->
+		<div id='id02' class='modal'>
+			<span onclick="document.getElementById('id02').style.display='none'" class='close' title='Fechar'>&times;</span>
+			<form class='modal-content animate'>
+				<div class='container2'>
+					<label><b>Digite como gostaria de ser chamado.</b></label>
+					<input type='text' placeholder='Digite o Nome' class='uname-cadastro'>
+					
+					<label><b>Digite o E-mail</b></label>
+					<input type='text' placeholder='Digite o E-mail' class='email'>
+					
+					<label><b>Digite a Senha</b></label>
+					<input type='password' placeholder='Digite a Senha' class='psw-cadastro'>
+					
+					<label><b>Confirme a sua Senha</b></label>
+					<input type='password' placeholder='Confirme a sua Senha' class='psw-cadastro'>
+					
+					<button class='confirmarbtn' type='submit'>Confirmar</button>
+						
+					<div class='container2' style='background-color:#ddd'>
+						<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Configuração do Título da Página e o Subtítulo-->
+		<div class="title">
+			<center><h2>ESTILOS BRAVERY</h2></center>
+			<center><h5>Encontre o Estilo que mais combina com você!</h5></center>
+		</div>
+		<!--Área com as Fotos e os títulos-->
+		<div class="container">
+		  <div class="row">
+			<!--Column-66 -> Onde contém informações sobre o estilo -->
+			<div class="column-66-5">
+				<h1>Bravery Armor</h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p>Com um toque despojado e contemporâneo o BRAVERY Armor traz o que você precisa pra uma
+				noite de festa. Construído com tecidos importados trazem o melhor conforto na utilização.
+				Perfeito para festas reservadas.</p>
+				<br>
+				<br>
+				<button class="btn">Feito sob encomenda</button>
+			</div>
+			<!--Column-33 -> Onde contém as fotos dos estilos-->
+			<div class="column-33-1">
+				<img src="../Estilos/Estilo 1.png" width="100%">
+			</div>
+		  </div>
+		</div>
+		<br>
+		<div class="container">
+		  <div class="row">
+			<div class="column-33">
+				<img src="../Estilos/Estilo 2.png" width='100%'>
+			</div>
+			<div class="column-66-2">
+				<h1>Bravery Mail</h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p>Um terno completo para o seu dia de trabalho, para aquela reunião onde precisa demonstrar toda
+				imponência que precisa para liderar a sua equipe.</p>
+				<br>
+				<br>
+				<button class="btn">Feito sob encomenda</button>
+			</div>
+		  </div>
+		  <br>
+		  <div class="row">
+			<div class="column-66-3">
+				<h1>Bravery OceanCamo </h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p>Com tecidos importados da Índia, ele traz um toque sedoso incomparável, atrair atenção com 
+				esse conjunto não vai ser difícil. Sua cor traz os melhores tons de azul, que varia conforme 
+				a iluminação do ambiente.</p>
+				<br>
+				<br>
+				<button class="btn">Feito sob encomenda</button>
+			</div>
+			<div class="column-33">
+				<img src="../Estilos/Estilo 3.png" width="100%">
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row">
+			<div class="column-33">
+				<img src="../Estilos/Estilo 4.png" width='100%'>
+			</div>
+			<div class="column-66-4">
+				<h1>Bravery Sceitmail</h1>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p>Assim como o Bravery Mail, o Sceitmail traz a mesma estrutura de costura Premium, porém feita
+				com um cetim chinês importado que atrai e seduz.</p>
+				<br>
+				<br>
+				<button class="btn">Feito sob encomenda</button>
+			</div>
+		  </div>
+		</div>
+		<div class="footer">
+			<center><h6>&copy;Copyright 2022 Bravery LMTD. Todos os direitos reservados.</h6></center>
+		<div class="footer1">
+			<p id="footer1">Brasil</p>
+			<p id="footer1">+55 (11) 4513-4614</p>
+			<p id="footer1">Av. Paulista, 616</p>
+			<p id="footer1">bravery@mail.bravery.com</p>
+		</div>
+		</div>
+			
+		<script src="../js/script.js">
+		</script>
+	</body>
+</html>

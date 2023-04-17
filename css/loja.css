@@ -1,0 +1,320 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: #ddd; /* dcb7a4 */
+}
+
+
+@font-face {
+	font-family: 'Dream';
+	src: url('Fontes/Dream Avenue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Catalina';
+	src: url('Fontes/Catalina Rayden.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Niguella';
+	src: url('Fontes/Niguella.ttf') format('truetype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+#navbar { /* Configurando a Barra de Navegação da página */
+  overflow: hidden;
+  background-color: #795548FF;
+  padding: 40px 10px; 
+  transition: 0.4s; 
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 99;
+}
+
+h6 {
+	font-size: 20px;
+}
+
+.footer1 {
+	font-family: Arial;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+#footer1 {
+	font-size: 19px;
+}
+
+.footer {
+	font-family: Arial;
+	background: rgba(0, 0, 0, 0.4);
+	color: white;
+	font-size: 30px;
+}
+
+/* Quando passar o mouse por cima da NavBar ela mudará de cor  */
+#navbar:hover {
+	background-color: #f1f1f1;
+} 
+
+/* Editando os links da Barra de Navegação */
+#navbar .link, .active {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Editando o logo na Barra de Navegação */
+#navbar #logo {
+  width: 20%;
+  transition: 0.4s;
+}
+
+/* Editando os links quando o mouse passar por cima e o link ativo */
+#navbar .link, .active:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Editando o link ativo */
+#navbar a.active {
+  background-color: #795548FF;
+  color: #f1f1f1;
+}
+
+/* Colocar os links na parte direita da Barra de Navegação */
+#navbar-right {
+  float: right;
+  padding: 0 1rem;
+}
+
+/* Em telas menores que 580px, a barra de navegação ficará no canto esquerdo ao invés de estar na parte superior da página */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* !important fará com que o JavaScript não sobreponha o preenchimento em telas pequenas */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+/* Editando a foto que está presente no plano de fundo do site */
+#background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+}
+
+/* Editando o Texto 'Lojas Bravery' */
+h1 {
+	font-family: Catalina;
+	padding-top: 150px;
+}
+
+/* Cards */
+.card {
+  position: relative;
+  box-shadow: 0 1px 80px 0 rgba(0, 0, 0, 0.4); /* Isso deixa o fundo transparente */
+  max-width: 500px;
+  margin-left: 400px;
+  text-align: center;
+  font-family: Arial;
+  height: 500px;
+  padding: 20px;
+}
+
+/* Editando o preço que estará nos cards */
+.price {
+  box-sizing: 15px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* Editando o botão do card 'Adicionar ao Carrinho' */
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+/* Quando o mouse passar por cima, o botão mudará a opacidade */
+.card button:hover {
+  opacity: 0.7;
+}
+
+/* Mesmo se repete */
+.card1 {
+  position: absolute;
+  box-shadow: 0 0px 80px 0 rgba(0, 0, 0, 0.1); /* Isso deixa o fundo transparente */
+  max-width: 500px;
+  margin-left: 1000px;
+  margin-top: -350px;
+  text-align: center;
+  font-family: Arial;
+  height: 500px;
+  padding: 20px;
+}
+
+.card1 button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card1 button:hover {
+  opacity: 0.7;
+}
+
+/* Configuração da tela de login */
+form {	/* borda do formulário */
+  border: 3px solid; 
+}
+
+input[type=text], input[type=password] { /* Configuração das caixas de texto */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.loginbtn, .cancelbtn { /* Configuração dos botões de login*/
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.loginbtn, .cancelbtn:hover { /* Efeitos do mouse sobre os botões */
+  opacity: 0.8;
+}
+
+.cancelbtn { /* Configuração do botão cancelar */
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.container2 { 
+  padding: 16px;
+}
+
+@media screen and (max-width: 300px) { /* Configuração para ajuste de tela */
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* Configuração extra da Div */
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 100; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content { 
+  background-color: #ddd;
+  margin: 200px auto; /* Centramento da seção na tela */
+  border: 1px solid;
+  width: 80%;
+}
+
+.close {  /* Área de fecha a janela no canto superior direito */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #ddd;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+label {
+	font-family: Arial;
+	font-size: 25px;
+}
+
+.close:hover,
+.close:focus { /* Configuração do mouse sobre o Botão de fechar */
+  color: red;
+  cursor: pointer;
+}
+
+/* Animação de zoom quando acionada a sessão */
+.animate { 
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Configuração do botão 'confirmar' da área de Cadastro */
+
+.confirmarbtn { /* Configuração dos botões de cadastro*/
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Descrição dos cards */
+p {
+	font-family: Arial;
+	font-size: 20px;
+}

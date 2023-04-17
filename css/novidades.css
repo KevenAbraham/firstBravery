@@ -1,0 +1,144 @@
+body {
+	background: linear-gradient(#151515, #795548FF);
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Dream';
+	src: url('Fontes/Dream Avenue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Catalina';
+	src: url('Fontes/Catalina Rayden.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Niguella';
+	src: url('Fontes/Niguella.ttf') format('truetype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Logo Bravery */
+section img {
+	transform: translate (-50%, -50%);
+	width: 100%;
+	height: 100%;
+	white-space: nowrap;
+	z-index: 10;
+	
+}
+
+/* Texto "NOVIDADES BRAVERY" */
+h1 {
+	font-family: Dream;
+	font-size: 52px;
+	color: white;
+}
+
+/* Texto "Novos modelos exclusivos Bravery" */
+h3 {
+	font-family: Niguella;
+	font-size: 25px;
+	color: white;
+}
+
+.footer1 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+#footer1 {
+	font-size: 19px;
+}
+
+.footer {
+	font-family: Arial;
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	font-size: 30px;
+}
+
+
+/* Isso deixará o texto dentro das imagens com a posição correta */
+* {box-sizing: border-box}
+
+/* Container da primeira imagem */
+.container {
+  position: relative;
+  width: 50%;
+  left: 20%;
+}
+
+/* Primeira imagem */
+.image {
+  width: 50%;
+}
+
+/* Área onde ficará o texto escondido na imagem */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 50%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+}
+
+/* Quando passar o mouse por cima */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* Container da primeira imagem */
+.container2 {
+  position: relative;
+  width: 50%;
+  right: -50%;
+  margin-top: -308px; 
+}
+
+/* Segunda imagem */
+.image2 {
+  width: 50%;
+  height: auto;
+}
+
+/* Área onde ficará o texto escondido na imagem */
+.overlay2 {
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: #f1f1f1;
+  width: 50%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+   margin-top: -63px;
+
+}
+
+/* Quando passar o mouse por cima da Segunda imagem  */
+.container2:hover .overlay2 {
+  opacity: 1;
+}

@@ -1,0 +1,362 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #4f4f4f;
+}
+
+@font-face {
+	font-family: 'Dream';
+	src: url('Fontes/Dream Avenue.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Catalina';
+	src: url('Fontes/Catalina Rayden.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Niguella';
+	src: url('Fontes/Niguella.ttf') format('truetype'); 
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Editando a foto que está presente no plano de fundo do site */
+#background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: -10;
+  -webkit-filter: blur(5px); /* Desfocar o plano de fundo */
+  filter: blur(5px);
+
+}
+
+/* Barra de Navegação da Página */
+#navbar {
+  overflow: hidden;
+  background-color: #795548FF;
+  padding: 40px 10px; 
+  transition: 0.4s; 
+  position: fixed; 
+  width: 100%;
+  top: 0; 
+  z-index: 99;
+}
+
+/* Quando passar o mouse por cima da NavBar ela mudará de cor  */
+#navbar:hover {
+	background-color: #f1f1f1;
+} 
+
+/* Editando os links presentes na Barra de Navegação */
+#navbar .link, .active {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Ajustando o Logo*/
+#navbar #logo {
+  width: 20%;
+  transition: 0.4s;
+}
+
+/* Ajustando os links para quando o mouse passar por cima */
+#navbar .link, .active:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* Editando o link que está em azul */
+#navbar a.active {
+  background-color: #795548FF;
+  color: white;
+}
+
+/* Colocando os links na parte direita da barra de navegação */
+#navbar-right {
+  float: right;
+  padding: 0 1rem;
+}
+
+/* Fará com que a barra se ajuste automaticamente com a resolução de tela em que se enquadra */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* !important fará com que o JavaScript não sobreponha o preenchimento em telas pequenas */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+
+h2 {
+	font-family: Dream;
+	font-size: 35px;
+	padding-top: 10rem;
+	color: white;
+}
+
+h5 {
+	font-family: Catalina;
+	font-size: 2rem;
+	color: white;
+}
+
+/* Configurando o Container aonde ficará todas as fotos e os Textos */
+* { /* Fará com que o container se enquadre dentro de uma espécie de caixa */
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column-66-2 {
+  float: left;
+  width: 66.66666%;
+  padding: 13px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-66-3{
+  float: left;
+  width: 66.66666%;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-66-4{
+  float: left;
+  width: 66.66666%;
+  padding: 3px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-66-5{
+  float: left;
+  width: 66.66666%;
+  padding: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-33-1 {
+  float: left;
+  width: 33.33333%;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+
+.footer1 {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+}
+
+#footer1 {
+	font-size: 19px;
+}
+
+.footer {
+	font-family: Arial;
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	font-size: 30px;
+}
+
+h1 {
+	font-family: Catalina;
+	font-size: 50px;
+}
+
+p {
+	font-family: Arial;
+	font-size: 25px;
+}
+
+.btn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #ddd;
+  color: black;
+}
+
+@media screen and (max-width: 1000px) { /* Ajuste para diferentes formatos de tela */
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Configuração da tela de login */
+form {	/* borda do formulário */
+  border: 3px solid; 
+}
+
+input[type=text], input[type=password] { /* Configuração das caixas de texto */
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/*Texto acima do link à home*/
+h3 {
+	font-family: Arial;
+}
+
+.loginbtn, .cancelbtn { /* Configuração dos botões de login*/
+  background-color: #795548FF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+
+.loginbtn, .cancelbtn:hover { /* Efeitos do mouse sobre os botões */
+  opacity: 0.8;
+}
+
+.cancelbtn { /* Configuração do botão cancelar */
+  width: auto;
+  padding: 10px 18px;
+  background-color: #151515;
+}
+
+.container2 { 
+  padding: 16px;
+}
+
+@media screen and (max-width: 300px) { /* Configuração para ajuste de tela */
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* Configuração extra da Div */
+ .modal {
+  display: none;
+  position: fixed;
+  z-index: 100; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content { 
+  background-color: #ddd;
+  margin: 200px auto; /* Centramento da seção na tela */
+  border: 1px solid;
+  width: 80%;
+}
+
+.close {  /* Área de fecha a janela no canto superior direito */
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #ddd;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+label {
+	font-family: Arial;
+	font-size: 25px;
+}
+
+.close:hover,
+.close:focus { /* Configuração do mouse sobre o Botão de fechar */
+  color: red;
+  cursor: pointer;
+}
+
+/* Animação de zoom quando acionada a sessão */
+.animate { 
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Configuração do botão 'confirmar' da área de Cadastro */
+
+.confirmarbtn { /* Configuração dos botões de cadastro*/
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}

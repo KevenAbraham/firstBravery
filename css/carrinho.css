@@ -1,0 +1,132 @@
+/* Ajustando a página */
+body {
+	margin: 20px 180px;
+	background: linear-gradient(#151515, #795548FF);
+}
+
+/* Área do Carrinho */
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+/* Área de Pagamento */
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+/* Área de Informações Pessoais */
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+  margin-top: 5px;
+}
+
+/* Editando o preenchimento das 3 áreas juntas */
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+/* Será a junção da área de informações pessoais e da área de pagamento */
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+/* área onde o cliente preencherá as informações */
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Legenda acima da área de preenchimento de informações */
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-family: Arial;
+  font-size: 15px;
+}
+
+/* Título da sessão */
+h3 {
+  display: block;
+  font-family: Arial;
+  font-size: 20px;
+}
+
+/* Título do Carrinho */
+h4 {
+  display: block;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+/* Ícones */
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+/* Botão de confirmar compra */
+.btn {
+  background-color: #795548FF;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+/* Quando o mouse passar por cima do botão, ele mudará a cor de fundo */
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* Deixará o preço no canto direito*/
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Ajuste de tela com base em outras resoluções */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Configuração da DIV do botão voltar */
+#btn-voltar {
+   -ms-flex: 25%; 
+  flex: 25%;
+  margin-top: 5px;
+  padding: 0 16px;
+}
+
+/* Configuração do botão voltar, para retorno à tela principal */
+.btnvoltar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}

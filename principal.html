@@ -1,0 +1,151 @@
+﻿<html>
+	<head>
+		<title>Bravery</title>
+		<style>
+			@import url("css/principal.css");
+		</style>
+		 <link rel="icon" type="image/x-icon" href="Imagens\black-bravery-icon-514px.png"><!--Ícone da página-->
+	</head>
+	<body>
+		<!--Logo BRAVERY centralizado 1ª tela-->
+		<div class="logo">
+			<img src="Imagens\white-bravery-logo.png" height="100%" width="100%">
+		</div>
+		<!--Área de carriinho, favoritos e conta-->
+		<div class="topnav-right">
+			<a href="#" onclick="document.getElementById('id01').style.display='block'"><img class="bk-user" src="Icones\user 128x128 preto.png" height="56px" 
+			width="56px"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		</div>
+		<!--Configuração do Ícone de Conta-->
+		<div id='id01' class='modal'>
+			<span onclick="document.getElementById('id01').style.display='none'" class='close' title='Fechar'>&times;</span>
+			<form class='modal-content animate'>
+				<div class='container2'>
+					<label><b>Usuário</b></label>
+					<input type='text' placeholder='Digite o Usuário' id='uname'>
+					
+					<label><b>Senha</b></label>
+					<input type='password' placeholder='Digite a Senha' id='psw'>
+					
+					<button onclick="Login()" class='loginbtn' type='submit'>Login</button>
+					<center><label><b>Novo por aqui?</b></label></center>
+					<button class='cadastrarbtn' onclick="document.getElementById('id02').style.display='block'" type='submit'>Cadastre-se</button>
+					
+					<div class='container2' style='background-color:#ddd'>
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Configurando o Cadastro-->
+		<div id='id02' class='modal'>
+			<span onclick="document.getElementById('id02').style.display='none'" class='close' title='Fechar'>&times;</span>
+			<form class='modal-content animate'>
+				<div class='container2'>
+					<label><b>Digite como gostaria de ser chamado.</b></label>
+					<input type='text' placeholder='Digite o Nome' id='uname-cadastro'>
+					
+					<label><b>Digite o E-mail</b></label>
+					<input type='text' placeholder='Digite o E-mail' id='email'>
+					
+					<label><b>Digite a Senha</b></label>
+					<input type='password' placeholder='Digite a Senha' id='psw-cadastro'>
+					
+					<label><b>Confirme a sua Senha</b></label>
+					<input type='password' placeholder='Confirme a sua Senha' id='psw-cadastro2'>
+					
+					<button onclick="Cadastro()" class='confirmarbtn' type='submit'>Confirmar</button>
+						
+					<div class='container2' style='background-color:#ddd'>
+						<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancelar</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<!--Área da caixa de busca do site-->
+		 <div class="container">
+			<div class="topnav">
+				<input type="text" placeholder="   Buscar..">
+			</div>
+		</div>
+		<!--Botão Smokes da 1ª tela-->
+		 <div class="container_btn">
+			<div class="btn_smokings">
+				<a href="html/loja.html"><button class="smokings_button">&nbsp;SMOKINGS&nbsp;</button></a>
+			</div>
+		</div>
+		<!--Links para outras telas na 1ª tela-->
+			<div class="topnav-center">
+				<center><a class="news" href="html/novidades.html">NOVIDADES</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="store" href="html/loja.html">LOJA</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a class="style" href="html/estilos.html">ESTILOS</a></center>
+			</div>	
+		<!--Imagem de fundo da 1ª tela-->	
+		<div class="fst_img">
+			<img src="Imagens\background-image-1.png">
+		</div>
+		<!--2º Vídeo na tela inicial-->
+		<div class="scnd_video">
+			<h2 id="video2_text">Conheça o Mundo Bravery!</h2>
+			<center><h2 id="video2_text2">A Bravery surgiu no final de 2021 com o intuito de expandir o ramo de roupas executivas de fabricação própria. A empresa trabalha diretamente com roupas executivas pré-prontas, criada propriamente pela empresa, ou com modelos a pedido do cliente. 
+			As roupas são feitas com os melhores tecidos que existem, importados de vários países.
+			<br><br>BRAVERY, do termo Bravura, soado como algo elegante, tem como foco o público alvo de todas as idades que se interessam e prestigiam a vestimenta executiva.</center></h2>
+			<video autoplay muted Loop>
+				<source src="Videos\bravery-video1.mp4" type="video/mp4">
+			</video>
+		</div>
+		<!--Seção de Slide de Fotos na terceira parte da tela inicial-->
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="Estilos\Estilo 1.png" style="width:100%">
+				<div class="text">Bravery Armor</div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="Estilos\Estilo 2.png" style="width:100%">
+				<div class="text">Bravery Mail</div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="Estilos\Estilo 3.png" style="width:100%">
+				<div class="text">Bravery OceanCamo</div>
+			</div>
+			
+			<div class="mySlides fade">
+				<img src="Estilos\Estilo 4.png" style="width:100%">
+				<div class="text">Bravery Sceitmail</div>
+			</div>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+				<span class="dot" onclick="currentSlide(4)"></span>
+			</div>
+			<!--Última parte da tela inicial-->
+	<div class="frth_video">
+		<video autoplay muted Loop>
+			<source src="Videos/bravery-video2.mp4" type="video/mp4">
+		</video> 
+	</div>
+		<div class="footer">
+			<center><h6>&copy;Copyright 2022 Bravery LMTD. Todos os direitos reservados.</h6></center>
+		<div class="footer1">
+			<p id="footer1">Brasil</p>
+			<p id="footer1">+55 (11) 4513-4614</p>
+			<p id="footer1">Av. Paulista, 616</p>
+			<p id="footer1">bravery@mail.bravery.com</p>
+		</div>
+		</div>
+		
+	
+	
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
