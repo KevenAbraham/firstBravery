@@ -16,26 +16,5 @@ Bravery, traduzido do inglês é bravura, traz um tom de elegância em sua pron�
 ---
 O projeto foi desenvolvido junto do meu colega `Fernando Pereira Cordeiro`, no qual tive o ==privilégio== de trabalhar junto dele.
 
----
-# Bravery
-
----
-
-### Hey there, my name is ==Keven== and you're welcome to Bravery!
-
-Bravery is a executive clothes store that emerged to innovating the business clothing business.
-
-> This project was develped for the 1^st^ semester of SDM (Software Development Multiplataform) at FATEC Maua College for the Web Development I subject.
-
-## Why Bravery?
-
----
-
-Bravery, as the name says, sounds like something classy, fancy. Therefore, in addition to offering fancy products, the name follow the brand making it even more fancy!
-
----
-
-This project was developed whit my co-worker `Fernando Pereira Cordeiro`, in which i had ==privilege== to work by his side.
-
 
 
