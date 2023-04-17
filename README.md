@@ -3,7 +3,7 @@
 
 ---
 
-### Olá, me chamo ==Keven== e seja bem-vindo(a) à `Bravery`!
+### Olá, me chamo Keven e seja bem-vindo(a) à `Bravery`!
 
 A Bravery é uma loja de roupas executivas que surgiu com o intuito de inovar no ramo de roupas elegantes.
 
@@ -14,7 +14,7 @@ A Bravery é uma loja de roupas executivas que surgiu com o intuito de inovar no
 Bravery, traduzido do inglês é bravura, traz um tom de elegância em sua pronúncia. Portanto, além de oferecer produtos elegantes, o nome acompanha a marca deixando-a mais elegante ainda!
 
 ---
-O projeto foi desenvolvido junto do meu colega `Fernando Pereira Cordeiro`, no qual tive o ==privilégio== de trabalhar junto dele.
+O projeto foi desenvolvido junto do meu colega `Fernando Pereira Cordeiro`, no qual tive o privilégio de trabalhar junto dele.
 
 
 
