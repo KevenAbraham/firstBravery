@@ -1,5 +1,4 @@
 ---
-:brazil:
 # Bravery
 
 ---
@@ -18,7 +17,6 @@ Bravery, traduzido do inglês é bravura, traz um tom de elegância em sua pron�
 O projeto foi desenvolvido junto do meu colega `Fernando Pereira Cordeiro`, no qual tive o ==privilégio== de trabalhar junto dele.
 
 ---
-:us:
 # Bravery
 
 ---
